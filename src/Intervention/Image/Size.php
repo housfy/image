@@ -137,7 +137,7 @@ class Size
      * @param  Closure $callback
      * @return Size
      */
-    private function resizeWidth(int $width, ?Closure $callback = null)
+    private function resizeWidth(?int $width, ?Closure $callback = null)
     {
         $constraint = $this->getConstraint($callback);
 
@@ -173,7 +173,7 @@ class Size
      * @param  Closure $callback
      * @return Size
      */
-    private function resizeHeight(int $height, ?Closure $callback = null)
+    private function resizeHeight(?int $height, ?Closure $callback = null)
     {
         $constraint = $this->getConstraint($callback);
 
