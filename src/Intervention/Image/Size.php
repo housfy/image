@@ -102,7 +102,7 @@ class Size
      * @param  Closure $callback
      * @return Size
      */
-    public function resize(int $width, int $height, ?Closure $callback = null)
+    public function resize(?int $width, ?int $height, ?Closure $callback = null)
     {
         if (is_null($width) && is_null($height)) {
             throw new InvalidArgumentException(
