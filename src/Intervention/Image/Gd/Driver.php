@@ -35,7 +35,7 @@ class Driver extends \Intervention\Image\AbstractDriver
      * @param  null|string   $background
      * @return \Intervention\Image\Image
      */
-    public function newImage(int $width, int $height, string $background = null)
+    public function newImage(int $width, int $height, ?string $background = null)
     {
         // create empty resource
         $core = imagecreatetruecolor($width, $height);
