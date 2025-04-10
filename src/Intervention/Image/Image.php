@@ -116,7 +116,7 @@ class Image extends File
      * @param  int     $quality
      * @return \Intervention\Image\Image
      */
-    public function encode(?string $format = null, int $quality = 90)
+    public function encode(?string $format = null, ?int $quality = 90)
     {
         return $this->driver->encode($this, $format, $quality);
     }
